@@ -2,19 +2,21 @@ import PropTypes from 'prop-types'
 
 const Project = ({ title, contributions, image, link, technologies }) => {
   return (
-    <div className="project-card group">
+    <div className="project-card group bg-orange-50/30 dark:bg-orange-900/10 shadow-[0_4px_20px_-5px_rgba(234,88,12,0.2)] dark:shadow-[0_4px_20px_-5px_rgba(234,88,12,0.15)]">
       <div className="overflow-hidden">
-        <div className="h-48 bg-gray-200 dark:bg-gray-700">
+        <div className="h-48 flex items-center justify-center">
           {image && (
-            <img 
-              src={image} 
-              alt={title} 
-              className="w-full h-full object-contain bg-white dark:bg-gray-800" 
-            />
+            <div className="w-full h-full flex items-center justify-center">
+              <img 
+                src={image} 
+                alt={title} 
+                className="max-w-full max-h-full object-contain" 
+              />
+            </div>
           )}
         </div>
         <div className="mt-4 text-center">
-          <a href={link} className="inline-block px-4 py-2 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-lg transition-colors duration-200">
+          <a href={link} className="inline-block px-4 py-2 bg-orange-600 text-white hover:bg-orange-700 rounded-lg transition-colors duration-200">
             View Project
           </a>
         </div>
@@ -31,7 +33,7 @@ const Project = ({ title, contributions, image, link, technologies }) => {
         </ul>
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech, index) => (
-            <span key={index} className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
+            <span key={index} className="px-3 py-1 bg-orange-200 dark:bg-orange-800/80 rounded-full text-sm text-gray-800 dark:text-orange-50 font-medium shadow-sm">
               {tech}
             </span>
           ))}
@@ -42,6 +44,11 @@ const Project = ({ title, contributions, image, link, technologies }) => {
 }
 
 Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  contributions: PropTypes.arrayOf(PropTypes.string).isRequired,
+  image: PropTypes.string,
+  link: PropTypes.string.isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default Project

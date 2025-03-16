@@ -41,7 +41,7 @@ export const projects = [
       "The React tutorial with some added capabilities",
       "Added display text instead of button on current move",
       "Added toggle button to sort the moves in ascending or descending order",
-      "Added winning-square class to show when a player wins",
+      "Added feedback to show when a player wins",
       "Added location for each move in the move history list",
     ],
     link: "#",

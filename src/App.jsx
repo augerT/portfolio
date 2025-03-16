@@ -39,7 +39,7 @@ function App() {
   return (
     <div className={`min-h-screen ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}>
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 py-4">
+      <nav className="fixed top-0 left-0 right-0 bg-orange-50/90 dark:bg-gray-950/90 backdrop-blur-sm z-50 py-4 border-b border-orange-200 dark:border-orange-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center space-x-4">
             <a href="#home" className={`nav-link ${activeSection === 'home' ? 'active' : ''}`}>Home</a>
@@ -57,17 +57,17 @@ function App() {
           <div className="mx-auto w-48 h-48 mb-8">
             <img src="/images/headshot.png" alt="Tyler Auger" className="w-full h-full object-cover rounded-full shadow-lg" />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-[1.5] py-4">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent leading-[1.5] py-4">
             Tyler Auger
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
             Full Stack Developer
           </p>
           <div className="flex justify-center gap-4">
-            <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg hover-scale">
+            <a href="#projects" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg hover-scale">
               View My Work
             </a>
-            <a href="#contact" className="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-6 py-3 rounded-lg hover-scale">
+            <a href="#contact" className="border-2 border-orange-600 text-orange-600 dark:text-orange-400 px-6 py-3 rounded-lg hover-scale">
               Contact Me
             </a>
           </div>
@@ -75,7 +75,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="section-container bg-white dark:bg-gray-800">
+      <section id="about" className="section-container bg-orange-50/30 dark:bg-orange-900/10">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
@@ -89,7 +89,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="section-container">
+      <section id="projects" className="section-container bg-gradient-to-b from-transparent via-orange-50/20 dark:via-orange-900/5 to-transparent">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -106,35 +106,34 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="section-container bg-white dark:bg-gray-800">
+      <section id="skills" className="section-container bg-orange-50/30 dark:bg-orange-900/10">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Skills & Technologies</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <div className="text-center hover-scale">
+          <div className="text-center hover-scale bg-orange-50/50 dark:bg-orange-900/10 p-6 rounded-xl border border-orange-200 dark:border-orange-800/30">
             <div className="text-4xl mb-2">💻</div>
-            <h3 className="font-semibold">Frontend Development</h3>
+            <h3 className="font-semibold text-orange-800 dark:text-orange-400">Frontend Development</h3>
             <p className="text-gray-600 dark:text-gray-300">React, Vue, TypeScript, Tailwind, JavaScript, HTML / CSS, JQuery</p>
           </div>
-          <div className="text-center hover-scale">
+          <div className="text-center hover-scale bg-orange-50/50 dark:bg-orange-900/10 p-6 rounded-xl border border-orange-200 dark:border-orange-800/30">
             <div className="text-4xl mb-2">⚙️</div>
-            <h3 className="font-semibold">Backend Development</h3>
+            <h3 className="font-semibold text-orange-800 dark:text-orange-400">Backend Development</h3>
             <p className="text-gray-600 dark:text-gray-300">Node.js, Express, Python, PHP, SQL</p>
           </div>
-          <div className="text-center hover-scale">
+          <div className="text-center hover-scale bg-orange-50/50 dark:bg-orange-900/10 p-6 rounded-xl border border-orange-200 dark:border-orange-800/30">
             <div className="text-4xl mb-2">🛠️</div>
-            <h3 className="font-semibold">Frameworks</h3>
+            <h3 className="font-semibold text-orange-800 dark:text-orange-400">Frameworks</h3>
             <p className="text-gray-600 dark:text-gray-300">Electron, NW.js, Laravel</p>
           </div>
-          <div className="text-center hover-scale">
-
+          <div className="text-center hover-scale bg-orange-50/50 dark:bg-orange-900/10 p-6 rounded-xl border border-orange-200 dark:border-orange-800/30">
             <div className="text-4xl mb-2">🤖</div>
-            <h3 className="font-semibold">Artificial Intelligence</h3>
+            <h3 className="font-semibold text-orange-800 dark:text-orange-400">Artificial Intelligence</h3>
             <p className="text-gray-600 dark:text-gray-300">LLMs, Speech-To-Text (Zipformer / LSTM)</p>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section-container">
+      <section id="contact" className="section-container bg-orange-50/30 dark:bg-orange-900/10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Let&apos;s Connect</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
@@ -142,16 +141,16 @@ function App() {
           </p>
           <div className="flex justify-center gap-6">
             <a href="https://github.com/augerT" target="_blank" rel="noopener noreferrer" 
-               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover-scale">
-              <span className="text-2xl">GitHub</span>
+               className="px-6 py-3 bg-orange-50/50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800/30 text-gray-700 dark:text-gray-200 hover:text-orange-600 dark:hover:text-orange-400 hover-scale">
+              <span className="text-xl font-medium">GitHub</span>
             </a>
             <a href="https://www.linkedin.com/in/tyler-auger-a0b7a0144/" target="_blank" rel="noopener noreferrer"
-               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover-scale">
-              <span className="text-2xl">LinkedIn</span>
+               className="px-6 py-3 bg-orange-50/50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800/30 text-gray-700 dark:text-gray-200 hover:text-orange-600 dark:hover:text-orange-400 hover-scale">
+              <span className="text-xl font-medium">LinkedIn</span>
             </a>
             <a href="mailto:tyj.auger@gmail.com"
-               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover-scale">
-              <span className="text-2xl">Email</span>
+               className="px-6 py-3 bg-orange-50/50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800/30 text-gray-700 dark:text-gray-200 hover:text-orange-600 dark:hover:text-orange-400 hover-scale">
+              <span className="text-xl font-medium">Email</span>
             </a>
           </div>
         </div>
