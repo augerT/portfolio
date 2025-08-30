@@ -79,11 +79,7 @@ function App() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-            I&apos;m a passionate developer focused on creating elegant solutions to complex problems. 
-            With expertise in modern web technologies, I build responsive and performant applications 
-            that provide exceptional user experiences. I have a proven track record of understanding, 
-            debugging, and optimizing legacy code bases. I am not shy to add new features onto these
-            codebases where requested, and am comfortable modernizing technologies where appropriate.
+            I’m a passionate software developer dedicated to crafting elegant, efficient solutions to complex challenges. With deep expertise in modern web technologies, I design and build responsive, high-performance applications that deliver exceptional user experiences. I bring a proven track record of debugging, optimizing, and extending legacy codebases, seamlessly balancing stability with innovation. Whether it’s adding impactful new features or modernizing outdated systems, I thrive on transforming code into maintainable, forward-looking solutions.
           </p>
         </div>
       </section>
