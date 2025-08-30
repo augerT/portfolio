@@ -1,6 +1,5 @@
 {
   "name": "tyler-auger-dot-dev",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
