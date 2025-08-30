@@ -11,7 +11,7 @@ export const projects = [
       "Optimized data transfer for large scripts, eliminating jitter in prompter output and improving live performance reliability.",
     ],
     link: "https://www.cuescript.tv/cueiT-software.php",
-    image: "/images/cueit-screenshot.png",
+    image: "/tyler-auger-dot-dev/images/cueit-screenshot.png",
     technologies: ["NW.js", "JavaScript", "HTML / CSS / JQuery"],
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
       "Say-iT became one of CueScript’s top-selling software products, driving adoption in broadcast environments.",
     ],
     link: "https://www.cuescript.tv/product-profile.php?pid=SayiT",
-    image: "/images/sayit-screenshot.png",
+    image: "/tyler-auger-dot-dev/images/sayit-screenshot.png",
     technologies: ["NWJS", "JavaScript", "HTML / CSS / JQuery"],
   },
   {
@@ -34,7 +34,7 @@ export const projects = [
       "Optimized performance with Tailwind CSS",
     ],
     link: "#",
-    image: "/images/portfolio-screenshot.png",
+    image: "/tyler-auger-dot-dev/images/portfolio-screenshot.png",
     technologies: ["React", "Tailwind CSS", "Vite"],
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
       "Added location for each move in the move history list",
     ],
     link: "#",
-    image: "/images/tictactoe-screenshot.png",
+    image: "/tyler-auger-dot-dev/images/tictactoe-screenshot.png",
     technologies: ["React", "Tailwind CSS"],
   },
   {
@@ -60,7 +60,7 @@ export const projects = [
       "Added cheat button for convenience in finishing the game faster",
     ],
     link: "#",
-    image: "/images/battleship-screenshot.png",
+    image: "/tyler-auger-dot-dev/images/battleship-screenshot.png",
     technologies: ["React", "Tailwind CSS"],
   },
 ];
