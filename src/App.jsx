@@ -55,7 +55,7 @@ function App() {
       <section id="home" className="section-container min-h-screen flex items-center justify-center pt-20">
         <div className="text-center space-y-6">
           <div className="mx-auto w-48 h-48 mb-8">
-            <img src="/images/headshot.png" alt="Tyler Auger" className="w-full h-full object-cover rounded-full shadow-lg" />
+            <img src="/tyler-auger-dot-dev/images/headshot.png" alt="Tyler Auger" className="w-full h-full object-cover rounded-full shadow-lg" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent leading-[1.5] py-4">
             Tyler Auger
