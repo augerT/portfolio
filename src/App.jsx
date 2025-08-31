@@ -55,7 +55,7 @@ function App() {
       <section id="home" className="section-container min-h-screen flex items-center justify-center pt-20">
         <div className="text-center space-y-6">
           <div className="mx-auto w-48 h-48 mb-8">
-            <img src="/tyler-auger-dot-dev/images/headshot.png" alt="Tyler Auger" className="w-full h-full object-cover rounded-full shadow-lg" />
+            <img src={`${import.meta.env.BASE_URL}images/headshot.png`} alt="Tyler Auger" className="w-full h-full object-cover rounded-full shadow-lg" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent leading-[1.5] py-4">
             Tyler Auger
@@ -123,7 +123,7 @@ function App() {
           <div className="text-center hover-scale bg-orange-50/50 dark:bg-orange-900/10 p-6 rounded-xl border border-orange-200 dark:border-orange-800/30">
             <div className="text-4xl mb-2">🤖</div>
             <h3 className="font-semibold text-orange-800 dark:text-orange-400">Artificial Intelligence</h3>
-            <p className="text-gray-600 dark:text-gray-300">LLMs, Speech-To-Text (Zipformer / LSTM)</p>
+            <p className="text-gray-600 dark:text-gray-300">LLMs, Speech-To-Text</p>
           </div>
         </div>
       </section>
