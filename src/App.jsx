@@ -61,7 +61,7 @@ function App() {
             Tyler Auger
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            Full Stack Developer
+            Full Stack Software Engineer
           </p>
           <div className="flex justify-center gap-4">
             <a href="#projects" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg hover-scale">
