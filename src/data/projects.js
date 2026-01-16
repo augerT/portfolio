@@ -25,8 +25,19 @@ export const projects = [
     image: `${import.meta.env.BASE_URL}images/sayit-screenshot.png`,
     technologies: ["NW.js", "JavaScript", "HTML / CSS / JQuery"],
   },
+    {
+    title: "Repository Tracker",
+    contributions: [
+      "A web application to track GitHub repositories and pull their latest release information",
+      "Built backend and frontend to work seamlessly together using React, TypeScript, Octokit, and GraphQL",
+      "Fully tested with Jest"
+    ],
+    link: "https://github.com/augerT/repository-tracker",
+    image: `${import.meta.env.BASE_URL}images/repository-tracker-screenshot.png`,
+    technologies: ["React", "TypeScript", "Octokit", "GraphQL", "Jest"],
+  },
   {
-    title: "Porfolio Website",
+    title: "Portfolio Website",
     contributions: [
       "Designed and developed a modern, responsive portfolio website",
       "Created smooth scrolling navigation with dynamic highlighting",
@@ -36,16 +47,6 @@ export const projects = [
     link: "https://github.com/augerT/portfolio",
     image: `${import.meta.env.BASE_URL}images/portfolio-screenshot.png`,
     technologies: ["React", "Tailwind", "Vite"],
-  },
-  {
-    title: "Repository Tracker",
-    contributions: [
-      "A web application to track GitHub repositories and pull their latest release information",
-      "Fully tested with Jest"
-    ],
-    link: "https://github.com/augerT/repository-tracker",
-    image: `${import.meta.env.BASE_URL}images/repository-tracker-screenshot.png`,
-    technologies: ["React", "TypeScript", "Octokit", "GraphQL", "Jest"],
   },
   {
     title: "Tic-Tac-Toe",
