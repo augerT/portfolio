@@ -2,24 +2,24 @@ export const projects = [
   {
     title: "Cue-iT",
     contributions: [
-      "Led modernization of Cue-iT, improving reliability and maintainability across platforms.",
-      "Redesigned and optimized text editor functionality, including a robust custom undo/redo system.",
-      "Modernized frontend by transitioning from HTML/jQuery/CSS to Vue with Pinia state management.",
-      "Built automated unit and integration tests with Vitest, improving long-term reliability.",
-      "Developed CueTALK Cloud on Azure, enabling hardware to connect seamlessly from anywhere.",
-      "Resolved critical off-screen text rendering issues, increasing broadcaster confidence in live environments.",
-      "Optimized data transfer for large scripts, eliminating jitter in prompter output and improving live performance reliability.",
+      "Led modernization of Cue-iT, improving reliability and maintainability across platforms",
+      "Redesigned and optimized text editor functionality, including a robust custom undo/redo system",
+      "Modernized frontend by transitioning from HTML/jQuery/CSS to Vue with Pinia state management",
+      "Built automated unit and integration tests with Vitest, improving long-term reliability",
+      "Developed CueTALK Cloud on Azure, enabling hardware to connect seamlessly from anywhere",
+      "Resolved critical off-screen text rendering issues, increasing broadcaster confidence in live environments",
+      "Optimized data transfer for large scripts, eliminating jitter in prompter output and improving live performance reliability",
     ],
     link: "https://www.cuescript.tv/cueiT-software.php",
     image: `${import.meta.env.BASE_URL}images/cueit-screenshot.png`,
-    technologies: ["JavaScript", "Electron", "Vue"],
+    technologies: ["JavaScript", "Electron", "Vue", "Pinia", "Vitest", "Azure"],
   },
   {
     title: "Say-iT",
     contributions: [
       "Designed and developed Say-iT, a voice-activated teleprompting application that eliminated the need for an operator",
       "Connected voice engine with Cue-iT, providing precise scroll automation from live audio input",
-      "Say-iT became one of CueScript’s top-selling software products, driving adoption in broadcast environments.",
+      "Say-iT became one of CueScript’s top-selling software products, driving adoption in broadcast environments",
     ],
     link: "https://www.cuescript.tv/product-profile.php?pid=SayiT",
     image: `${import.meta.env.BASE_URL}images/sayit-screenshot.png`,
@@ -36,6 +36,16 @@ export const projects = [
     link: "https://github.com/augerT/portfolio",
     image: `${import.meta.env.BASE_URL}images/portfolio-screenshot.png`,
     technologies: ["React", "Tailwind", "Vite"],
+  },
+  {
+    title: "Repository Tracker",
+    contributions: [
+      "A web application to track GitHub repositories and pull their latest release information",
+      "Fully tested with Jest"
+    ],
+    link: "https://github.com/augerT/repository-tracker",
+    image: `${import.meta.env.BASE_URL}images/repository-tracker-screenshot.png`,
+    technologies: ["React", "TypeScript", "Octokit", "GraphQL", "Jest"],
   },
   {
     title: "Tic-Tac-Toe",
